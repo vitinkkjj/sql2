@@ -14,5 +14,3 @@ Create table animal(
   ('589734589734', 'pitbul', '20/10/2000', 'alergia a pileto', 'masculino', 'grande', '8652416'),
   
 select * from animal
-#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#.idea/
