@@ -20,13 +20,24 @@ CREATE TABLE agenda_consulta(
   medicamento varchar (40) not NULL,
   exame varchar (90) not NULL,
   relatorio varchar (200) not NULL,
-  data varchar (10not NULL,
-  horario varchar (5),
-  nome_veterinario (20),
-  animal_id (20),
-  veterinario_id (20)
+  data varchar (10) not NULL,
+  horario varchar (5) not NULL,
+  nome_veterinario (20) NOT NULL,
+  animal_id (20) NOT NULL,
+  veterinario_id (20) NOT NULL
   	),
     
- INSERT into agenda_consulta( 'pileto', 'bexiga', 'fez exame da bexiga', '10/0/2000', '20:20', 'claudio', '53321', '656621'),
+ INSERT into agenda_consulta( 'pileto', 'bexiga', 'fez exame da bexiga', '10/00/2000', '20:20', 'claudio', '53321', '656621'),
   
 SELECT *FROM agenda_cunsulta
+
+CREATE TABLE veterinario(
+  id integer PRIMARY KEY AUTOINCREMENT,
+  nome_id varchar (30) not NULL,
+  telefone varchar (15) NOT NULL,
+  endereço varchar (20) NOT NULL,
+  cnpj varchar (20) NOT NULL,
+  produto_id varchar (20) not NULL
+  	).
+  
+  INSERT into 
